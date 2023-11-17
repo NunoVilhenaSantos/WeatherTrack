@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace WeatherTrack
+namespace WeatherTrack.Platforms.iOS
 {
     public class Program
     {

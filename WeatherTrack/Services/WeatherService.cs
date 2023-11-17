@@ -25,7 +25,7 @@ namespace WeatherTrack.Services
 
             try
             {
-                var url = Constants.APIUrl + "weather?" + query + "&appid=" + Constants.APIKey;
+                var url = WeatherTrack.Constants.APIUrl + "weather?" + query + "&appid=" + WeatherTrack.Constants.APIKey;
                 var response = await _httpClient.GetAsync(url);
 
                 if (response.IsSuccessStatusCode)
@@ -55,7 +55,7 @@ namespace WeatherTrack.Services
 
             try
             {
-                var url = Constants.APIUrl + "forecast?" + query + "&appid=" + Constants.APIKey;
+                var url = WeatherTrack.Constants.APIUrl + "forecast?" + query + "&appid=" + WeatherTrack.Constants.APIKey;
                 var response = await _httpClient.GetAsync(url);
 
                 if (response.IsSuccessStatusCode)
